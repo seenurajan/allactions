@@ -18,18 +18,15 @@ describe ('Protractor Automation Scripts',function(){
 		console.log(gettext + " before switching")	
 				
 				});	
-			});
+			});		
+		browser.driver.switchTo().frame(element(by.xpath("//div[2]//iframe[1]")).getWebElement());
 		
-		
-		
-		//browser.driver.switchTo().frame(element(by.xpath("//div[2]//iframe[1]")).getWebElement());
-		
-		browser.switchTo().frame(element(by.xpath("//iframe[1]")).getWebElement()).then(function(){
+		browser.switchTo().frame(element(by.xpath("//div[1]//iframe[1]")).getWebElement()).then(function(){
 		console.log("switched successfully")
-		browser.sleep(5000)
+		browser.sleep(5000)	
+		 
 		})
-		
-		banking.customerclick.click()
+		banking.customerclick.click();
     });		
 	
 });

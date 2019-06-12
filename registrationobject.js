@@ -20,18 +20,13 @@ function registration (){
     this.Allcheckboxs= element.all(by.model("prod.included"));
     
     //Banking
-    this.ClickBanking= element(by.xpath("//h2[contains(text(),'Banking')]"));
-    this.customerclick= element(by.buttonText("Customer Login"));
+    this.ClickBanking= element(by.xpath("//h2[contains(text(),'Banking')]"));    
+    this.customerclick= element(by.xpath("//button[contains(text(),'Bank Manager Login')]"));
     
     //WebTable
     this.Clicktable= element(by.xpath("//h2[contains(text(),'WebTables')]"));   
-    
-    
-    this.tableco= element.all(by.repeater("dataRow in displayedCollection"));
-    
-    this.emailtext= element(by.css("td:nth-child(7)")); 
-
- 
+    this.tableco= element.all(by.repeater("dataRow in displayedCollection"));    
+    this.emailtext= element(by.css("td:nth-child(7)"));  
     
     	this.getURL = function() {
 		browser.get('http://www.way2automation.com/protractor-angularjs-practice-website.html#');
