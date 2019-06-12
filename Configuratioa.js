@@ -9,10 +9,10 @@ exports.config = {
 	  'browserName': 'firefox'
 	}],*/
   
-//  capabilities:{
-//  'browserName':'firefox' 
-//   
-//  },
+  capabilities:{
+  'browserName':'firefox' 
+   
+  },
   
   onPrepare : function(){
 		
